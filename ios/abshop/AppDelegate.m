@@ -3,6 +3,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "Appboy-iOS-SDK/AppboyKit.h"
 
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -31,6 +32,10 @@ static void InitializeFlipper(UIApplication *application) {
   InitializeFlipper(application);
 #endif
 
+  [Appboy startWithApiKey:@"26cb8e04-64ba-4b1c-93d2-0a2e9809f17f"
+      inApplication:application
+  withLaunchOptions:launchOptions];
+  
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"abshop"
