@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101009445817",
+    "firebase_url": "https://abshop-2197e.firebaseio.com",
+    "project_id": "abshop-2197e",
+    "storage_bucket": "abshop-2197e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101009445817:android:0781e38a678eb021ce5c68",
+        "android_client_info": {
+          "package_name": "com.abshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101009445817-86ousmdev2upff8vt854oh4jg84t69i1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abshop",
+            "certificate_hash": "ba9616366b519f1585ec5d3cabd1abb7af7cead5"
+          }
+        },
+        {
+          "client_id": "101009445817-nisaja66qi658aq3via91p12i1lka27u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3grE2HpTy9AZpi7ddJt-aaM50VGWqi90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101009445817-nisaja66qi658aq3via91p12i1lka27u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
