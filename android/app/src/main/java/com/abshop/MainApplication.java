@@ -2,6 +2,9 @@ package com.abshop;
 
 import android.app.Application;
 import android.content.Context;
+
+import com.appboy.AppboyLifecycleCallbackListener;
+import com.appboy.reactbridge.AppboyReactPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
@@ -26,7 +29,8 @@ public class MainApplication extends Application implements ReactApplication {
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
-          return packages;
+//            packages.add(new AppboyReactPackage());
+            return packages;
         }
 
         @Override
@@ -45,6 +49,7 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+    registerActivityLifecycleCallbacks(new AppboyLifecycleCallbackListener());
   }
 
   /**
