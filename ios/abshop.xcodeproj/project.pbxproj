@@ -58,6 +58,7 @@
 		54DCF3A78E85846EDE834ECF /* libPods-abshop-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-abshop-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8883D8E1DE1E1A768A188A /* Pods-abshop-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abshop-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-abshop-tvOSTests/Pods-abshop-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		5EEC13B7B8319333163F5966 /* Pods-abshop-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abshop-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-abshop-tvOS/Pods-abshop-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		69B502DD245FB75C009E3480 /* abshop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = abshop.entitlements; path = abshop/abshop.entitlements; sourceTree = "<group>"; };
 		85ABDCC48CC4D329AAFC7DC2 /* Pods-abshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abshop.release.xcconfig"; path = "Target Support Files/Pods-abshop/Pods-abshop.release.xcconfig"; sourceTree = "<group>"; };
 		A32AE28E0C639835B3ED8725 /* Pods-abshop-abshopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abshop-abshopTests.debug.xcconfig"; path = "Target Support Files/Pods-abshop-abshopTests/Pods-abshop-abshopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B72C50011B7611AD5A233970 /* Pods-abshop-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-abshop-tvOS.release.xcconfig"; path = "Target Support Files/Pods-abshop-tvOS/Pods-abshop-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,13 +135,13 @@
 				DF6D7E3360E9EB69FAA5FB01 /* Pods-abshop-tvOSTests.debug.xcconfig */,
 				5B8883D8E1DE1E1A768A188A /* Pods-abshop-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* abshop */ = {
 			isa = PBXGroup;
 			children = (
+				69B502DD245FB75C009E3480 /* abshop.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -294,6 +295,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 5K2TFACNS4;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1123,7 +1125,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = abshop/abshop.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5K2TFACNS4;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1136,7 +1140,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ab180.abshop;
 				PRODUCT_NAME = abshop;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1150,7 +1154,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = abshop/abshop.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5K2TFACNS4;
 				INFOPLIST_FILE = abshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1158,7 +1164,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ab180.abshop;
 				PRODUCT_NAME = abshop;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
