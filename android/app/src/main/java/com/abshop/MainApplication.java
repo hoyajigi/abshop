@@ -7,6 +7,7 @@ import com.appboy.AppboyLifecycleCallbackListener;
 import com.appboy.reactbridge.AppboyReactPackage;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.swmansion.rnscreens.RNScreensPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
