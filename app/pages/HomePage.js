@@ -5,11 +5,12 @@ import {
   Text,
   FlatList,
   Image,
-  Dimensions
+  Dimensions,
+  TouchableOpacity
 } from 'react-native';
 import { getProducts } from '../data';
 
-export default HomePage = () => {
+export default HomePage = ({ navigation }) => {
     return (
         <FlatList
           style={styles.cardList}
@@ -17,7 +18,7 @@ export default HomePage = () => {
           numColumns={2}
           data={getProducts()}
           renderItem={({item}) => 
-            <View style={styles.cardView} key={item.id}>
+            <TouchableOpacity style={styles.cardView} key={item.id} onPress={() => navigation.navigate('Detail')}>
                 <Image
         style={styles.cardImage}
         source={item.picture}
@@ -25,7 +26,7 @@ export default HomePage = () => {
                 <Text style={styles.itemBrand}>아이메리</Text>
                 <Text style={styles.itemText} numberOfLines={1}>{item.title}</Text>
                 <Text style={styles.itemPrice}>19,700</Text>
-            </View>}
+            </TouchableOpacity>}
         />
     );
 }

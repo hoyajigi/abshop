@@ -1,6 +1,8 @@
 // app/routes/index.js
 import React from 'react';
 import HomePage from '../pages/HomePage';
+import DetailPage from '../pages/DetailPage';
+
 import themes from '../styles/theme.style';
 // const Route = createStackNavigator(
 // {
@@ -26,6 +28,7 @@ function Route() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomePage} />
+      <Stack.Screen name="Detail" component={DetailPage} options={{ title: '상품정보' }} />
     </Stack.Navigator>
   );
 }
