@@ -1,33 +1,38 @@
 import React from 'react';
 import {
   StyleSheet,
-  View,
   Text,
   FlatList,
   Image,
   Dimensions,
+  SafeAreaView,
   TouchableOpacity
 } from 'react-native';
 import { getProducts } from '../data';
 
+const ReactAppboy = require('react-native-appboy-sdk');
+//     ReactAppboy.logCustomEvent(this.state.customEventText, {'stringKey': 'stringValue', 'intKey': 42, 'floatKey': 1.23, 'boolKey': true, 'dateKey': testDate});
+
 export default HomePage = ({ navigation }) => {
     return (
-        <FlatList
-          style={styles.cardList}
-          columnWrapperStyle={styles.cardListColumnWrapper}
-          numColumns={2}
-          data={getProducts()}
-          renderItem={({item}) => 
-            <TouchableOpacity style={styles.cardView} key={item.id} onPress={() => navigation.navigate('Detail')}>
-                <Image
-        style={styles.cardImage}
-        source={item.picture}
-      />
-                <Text style={styles.itemBrand}>아이메리</Text>
-                <Text style={styles.itemText} numberOfLines={1}>{item.title}</Text>
-                <Text style={styles.itemPrice}>19,700</Text>
-            </TouchableOpacity>}
+      <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
+          <FlatList
+            style={styles.cardList}
+            columnWrapperStyle={styles.cardListColumnWrapper}
+            numColumns={2}
+            data={getProducts()}
+            renderItem={({item}) => 
+              <TouchableOpacity style={styles.cardView} key={item.id} onPress={() => navigation.navigate('Detail')}>
+                  <Image
+          style={styles.cardImage}
+          source={item.picture}
         />
+                  <Text style={styles.itemBrand}>아이메리</Text>
+                  <Text style={styles.itemText} numberOfLines={1}>{item.title}</Text>
+                  <Text style={styles.itemPrice}>19,700</Text>
+              </TouchableOpacity>}
+          />
+        </SafeAreaView>
     );
 }
 
@@ -36,7 +41,8 @@ var width = Dimensions.get('window').width; //full width
 const styles = StyleSheet.create({
   cardList: {
     marginLeft: 5,
-    marginRight: 5
+    marginRight: 5,
+    backgroundColor:'white'
   },
   cardListColumnWrapper: {
     flex: 1,
