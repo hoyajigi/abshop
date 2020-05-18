@@ -6,7 +6,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "22,320",
+        price: "22320",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200422_1587565250764700l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
@@ -36,7 +36,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "23,220",
+        price: "23220",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200424_1587736447256159l.jpg"},
         description: `데일리로 즐기기 좋은
@@ -68,7 +68,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/03/30/15053279_1585572139_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "20,520",
+        price: "20520",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/03/30/15053279_1585572140_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200330_1585571978497010l.jpg"},
         description: `여성스럽고 페미닌한
@@ -100,7 +100,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "19,530",
+        price: "19530",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200408_1586354596236614l.jpg"},
         description: `여성스러운 색감과 핏
@@ -133,7 +133,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "38,700",
+        price: "38700",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200422_1587562560170560l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
@@ -177,7 +177,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "15,030",
+        price: "15030",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200328_1585405553849203l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
@@ -208,7 +208,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "27,450",
+        price: "27450",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200407_1586187920004701l.jpg"},
         description: `여성스럽고 페미닌한
@@ -241,7 +241,7 @@ const products = [
         thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_M.jpg"},
         brandNmae: "아이메리",
         brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
-        price: "35,100",
+        price: "35100",
         mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_L.jpg"},
         detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200420_1587312763299148l.jpg"},
         description: `여성스럽게 즐기시기에 좋은

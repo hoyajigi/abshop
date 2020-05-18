@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   Text,
@@ -11,9 +11,13 @@ import {
 import { getProducts } from '../data';
 
 const ReactAppboy = require('react-native-appboy-sdk');
-//     ReactAppboy.logCustomEvent(this.state.customEventText, {'stringKey': 'stringValue', 'intKey': 42, 'floatKey': 1.23, 'boolKey': true, 'dateKey': testDate});
 
 export default HomePage = ({ navigation }) => {
+
+  useEffect(() => {
+     ReactAppboy.logCustomEvent("View Product List", {});
+  });
+
     return (
       <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
           <FlatList
@@ -29,7 +33,7 @@ export default HomePage = ({ navigation }) => {
                   <Image style={styles.cardImage} source={item.thumbnail} />
                   <Text style={styles.itemBrand}>{item.brandNmae}</Text>
                   <Text style={styles.itemText} numberOfLines={1}>{item.title}</Text>
-                  <Text style={styles.itemPrice}>{item.price}</Text>
+                  <Text style={styles.itemPrice}>{item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Text>
               </TouchableOpacity>}
           />
         </SafeAreaView>

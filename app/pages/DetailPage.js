@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -10,6 +10,7 @@ import {
   Button,
   TouchableOpacity,
   SafeAreaView,
+  Alert
 } from 'react-native';
 import { getProducts } from '../data';
 
@@ -21,6 +22,11 @@ var width = Dimensions.get('window').width; //full width
 export default DetailPage = ({ route, navigation }) => {
     const { productId } = route.params;
     const product = getProducts().find(item => item.id == productId)
+
+    useEffect(() => {
+        ReactAppboy.logCustomEvent("View Product Detail", {'productId': product.id});
+    });
+
     return (
         <View style={{flex: 1}} >
             <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
@@ -33,7 +39,7 @@ export default DetailPage = ({ route, navigation }) => {
                             <Text style={{color:'#9e9e9e', marginLeft: 12}}>{product.brandNmae}</Text>
                         </View>
                         <Text style={{fontSize: 20}}>{product.title}</Text>
-                        <Text style={{fontSize: 20, fontWeight: '700'}}>{product.price}</Text>
+                        <Text style={{fontSize: 20, fontWeight: '700'}}>{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</Text>
                     </View>
                     
                     <View style={styles.detailDivision}></View>
@@ -80,7 +86,11 @@ export default DetailPage = ({ route, navigation }) => {
                 </ScrollView>
                 <TouchableOpacity
                     style={styles.checkoutButton}
-                    underlayColor='#fff'>
+                    underlayColor='#fff'
+                    onPress={()=>{
+                        ReactAppboy.logPurchase(product.id.toString(), product.price, 'USD', 1);
+                        Alert.alert("구매 완료", "구매해 주셔서 감사합니다!!!")
+                        }}>
                         <Text style={styles.checkoutText}>구매하기</Text>
                 </TouchableOpacity>
             </SafeAreaView>
