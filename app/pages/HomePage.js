@@ -19,7 +19,7 @@ export default HomePage = ({ navigation }) => {
           <FlatList
             style={styles.cardList}
             columnWrapperStyle={styles.cardListColumnWrapper}
-
+            removeClippedSubviews={false}
             numColumns={2}
             data={getProducts()}
             renderItem={({item}) => 
@@ -55,8 +55,7 @@ const styles = StyleSheet.create({
   cardImage: {
     borderRadius: 10,
     width: width / 2 - 20,
-    height:207,
-    flex: 1,
+    height: 207,
   },
   itemBrand: {
     marginTop: 9,

@@ -3,12 +3,12 @@ const products = [
     {
         id: 15753091,
         title: "[핏색감예쁨/4col] 파스텔 라운드 기본 무지 반팔 니트 롱 원피스 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "22,320",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200422_1587565250764700l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/22/15753091_1587566327_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200422_1587565250764700l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
         파스텔의 잔잔한 색감과
         꾸안꾸핏이 세련되게 매력적인
@@ -33,12 +33,12 @@ const products = [
     {
         id: 15823515,
         title: "[핏예쁨/패턴예쁨] 브이넥 반팔 잔꽃 주름 프릴 밴딩 랩 플라워 쉬폰 롱 원피스 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "23,220",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200424_1587736447256159l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/24/15823515_1587736531_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200424_1587736447256159l.jpg"},
         description: `데일리로 즐기기 좋은
         브이넥 반팔 잔꽃 주름 프릴 밴딩 랩 플라워 쉬폰 롱 원피스
         단품으로 입으실 수 있고
@@ -65,12 +65,12 @@ const products = [
     {
         id: 15053279,
         title: "[핏예쁨/패턴예쁨] 브이넥 반팔 잔꽃 주름 프릴 밴딩 랩 플라워 쉬폰 롱 원피스 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/03/30/15053279_1585572139_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/03/30/15053279_1585572139_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "20,520",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/03/30/15053279_1585572140_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200330_1585571978497010l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/03/30/15053279_1585572140_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200330_1585571978497010l.jpg"},
         description: `여성스럽고 페미닌한
         고급스러운 느낌의
         뷔스티에 롱원피스
@@ -97,12 +97,12 @@ const products = [
     {
         id: 15343954,
         title: "[핏예쁨/색감예쁨] 파스텔 브이넥 기본 무지 반팔 퍼프 벌룬 소매 니트 티셔츠 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "19,530",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200408_1586354596236614l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/08/15343954_1586354778_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200408_1586354596236614l.jpg"},
         description: `여성스러운 색감과 핏
         브이넥의 디자인과
         퍼프 벌룬소매와 화사한 파스텔색감의
@@ -130,12 +130,12 @@ const products = [
     {
         id: 15753698,
         title: "[고급스러움/오프숄더가능] 스퀘어넥 퍼프 벌룬 소매 기본 무지 셔링 랩 리본 플레어 롱 원피스 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "38,700",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200422_1587562560170560l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/22/15753698_1587562710_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200422_1587562560170560l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
         잔잔한 색상의
         심플한 디자인이 세련되게 매력적인
@@ -174,12 +174,12 @@ const products = [
     {
         id: 14993623,
         title: "[색감예쁨/핏예쁨] 라운드 퍼프 벌룬 소매 니트티 무지 반팔 숏 니트 티셔츠 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "15,030",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200328_1585405553849203l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/03/28/14993623_1585406140_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200328_1585405553849203l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
         여성스러운 핏이 멋스러운 니트티
         라운드넥과 비비드 컬러가 세련되게 매력적인
@@ -205,12 +205,12 @@ const products = [
     {
         id: 15250466,
         title: "[페미닌/핏예쁨] 브이넥 퍼프 벌룬 소매 셔링 반팔 리본 잔꽃 플라워 롱 원피스 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "27,450",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200407_1586187920004701l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/07/15250466_1586187959_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200407_1586187920004701l.jpg"},
         description: `여성스럽고 페미닌한
         여리여리한 분위기가 매력적인
         브이넥 퍼프 벌룬 소매 셔링 반팔 리본 잔꽃 플라워 롱 원피스
@@ -238,12 +238,12 @@ const products = [
     {
         id: 15596963,
         title: "[고급스러움/핏예쁨] 스퀘어넥 퍼프 벌룬 소매 기본 무지 리본 린넨 롱 원피스 / 하객룩 _아이메리",
-        thumbnail: {url: "https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_M.jpg"},
+        thumbnail: {uri: "https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_M.jpg"},
         brandNmae: "아이메리",
-        brandImage: {url:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
+        brandImage: {uri:"https://image.brandi.me/seller/imerry_profile_1508899649.jpg"},
         price: "35,100",
-        mainImage: {url:"https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_L.jpg"},
-        detailImage: {url: "https://imgb.a-bly.com/data/editor/20200420_1587312763299148l.jpg"},
+        mainImage: {uri:"https://image.brandi.me/cproduct/2020/04/24/15596963_1587697650_image1_L.jpg"},
+        detailImage: {uri: "https://imgb.a-bly.com/data/editor/20200420_1587312763299148l.jpg"},
         description: `여성스럽게 즐기시기에 좋은
         파스텔의 잔잔한 색감과
         꾸안꾸핏이 세련되게 매력적인

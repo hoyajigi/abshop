@@ -20,7 +20,7 @@ var width = Dimensions.get('window').width; //full width
 
 export default DetailPage = ({ route, navigation }) => {
     const { productId } = route.params;
-    const product = getProducts().find(item => item.id === productId)
+    const product = getProducts().find(item => item.id == productId)
     return (
         <View style={{flex: 1}} >
             <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
