@@ -6,7 +6,8 @@ import {
   Image,
   Dimensions,
   SafeAreaView,
-  TouchableOpacity
+  TouchableOpacity,
+  View
 } from 'react-native';
 import { getProducts } from '../data';
 import Airbridge from 'airbridge-react-native-sdk';
@@ -26,6 +27,27 @@ export default HomePage = ({ navigation }) => {
 
     return (
       <SafeAreaView style={{flex: 1, backgroundColor:'white'}}>
+        <View
+          style={{
+            flexDirection: "row",
+            height: 40,
+            justifyContent: "space-between"
+          }}
+        >
+          <View />
+          <View>
+            <Text style={{fontSize: 18, fontWeight: "bold"}}>AB#</Text>
+          </View>
+          <View style={{marginRight:20}}>
+            <Image
+              style={{
+                width: 20,
+                height: 30,
+              }}
+              source={require('../assets/img_top_login.png')}
+            />  
+          </View>
+        </View>
           <FlatList
             style={styles.cardList}
             columnWrapperStyle={styles.cardListColumnWrapper}
