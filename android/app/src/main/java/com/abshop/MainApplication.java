@@ -15,6 +15,8 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
+import co.ab180.airbridge.reactnative.AirbridgeRN;
+
 public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost =
@@ -51,6 +53,7 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
     registerActivityLifecycleCallbacks(new AppboyLifecycleCallbackListener());
+    AirbridgeRN.init(this, "abshop", "a2bc738fd1cb4226bdf9a622d1c9dff6");
   }
 
   /**

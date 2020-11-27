@@ -13,6 +13,7 @@ import {
   Alert
 } from 'react-native';
 import { getProducts } from '../data';
+import Airbridge from 'airbridge-react-native-sdk';
 
 const ReactAppboy = require('react-native-appboy-sdk');
 //     ReactAppboy.logCustomEvent(this.state.customEventText, {'stringKey': 'stringValue', 'intKey': 42, 'floatKey': 1.23, 'boolKey': true, 'dateKey': testDate});
@@ -89,6 +90,25 @@ export default DetailPage = ({ route, navigation }) => {
                     underlayColor='#fff'
                     onPress={()=>{
                         ReactAppboy.logPurchase(product.id.toString(), product.price, 'USD', 1);
+
+                        Airbridge.event.purchase({
+                            products: [
+                                {
+                                    name: product.title,
+                                    price: 12345,
+                                    quantity: 1,
+                                },
+                            ],
+                            currency: 'KRW',
+                            total: 12345,
+                            // transactionID: 'transactionID-purchase',
+                            
+                            // isInAppPurchase: true,
+                        },
+                        {
+                            action: "매수"
+                        }
+                        );
                         Alert.alert("구매 완료", "구매해 주셔서 감사합니다!!!")
                         }}>
                         <Text style={styles.checkoutText}>구매하기</Text>

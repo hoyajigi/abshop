@@ -9,6 +9,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { getProducts } from '../data';
+import Airbridge from 'airbridge-react-native-sdk';
 
 const ReactAppboy = require('react-native-appboy-sdk');
 
@@ -16,6 +17,11 @@ export default HomePage = ({ navigation }) => {
 
   useEffect(() => {
      ReactAppboy.logCustomEvent("View Product List", {});
+     Airbridge.state.setUser({
+        ID: 'test1',
+        email: 'test1@ab180.co',
+    });
+
   });
 
     return (

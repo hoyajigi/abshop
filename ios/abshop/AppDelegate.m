@@ -8,6 +8,11 @@
 
 #import "Appboy-iOS-SDK/AppboyKit.h"
 
+#import <AirBridge/AirBridge.h>
+#import <AirBridge/ABProduct.h>
+#import <AirBridge/ABEcommerceEvent.h>
+#import <AirbridgeRN/AirbridgeRN.h>
+
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
@@ -39,6 +44,9 @@ static void InitializeFlipper(UIApplication *application) {
       inApplication:application
   withLaunchOptions:launchOptions];
   
+  [AirBridge setLogLevel:AB_LOG_ALL];
+  [AirbridgeRN getInstance:@"a2bc738fd1cb4226bdf9a622d1c9dff6" appName:@"abshop" withLaunchOptions:launchOptions];
+
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"abshop"
@@ -126,6 +134,7 @@ static void InitializeFlipper(UIApplication *application) {
    openURL:(NSURL *)url
    options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
+  [AirbridgeRN.deeplink handleURLSchemeDeeplink:url];
   return [RCTLinkingManager application:application openURL:url options:options];
 }
 
