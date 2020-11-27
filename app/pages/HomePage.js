@@ -39,13 +39,15 @@ export default HomePage = ({ navigation }) => {
             <Text style={{fontSize: 18, fontWeight: "bold"}}>AB#</Text>
           </View>
           <View style={{marginRight:20}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Image
               style={{
                 width: 20,
                 height: 30,
               }}
               source={require('../assets/img_top_login.png')}
-            />  
+            />
+            </TouchableOpacity>  
           </View>
         </View>
           <FlatList
