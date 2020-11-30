@@ -44,6 +44,14 @@ export default HomePage = ({ navigation }) => {
             }}
             color="#f194ff"
           />
+          <Button
+            title="Wipe Data"
+            onPress={() => {
+              ReactAppboy.wipeData();
+              Alert.alert("Wipe Data 했어요!");
+            }}
+            color="red"
+          />
 
         </View>
       </SafeAreaView>
