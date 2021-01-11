@@ -42,7 +42,8 @@ static void InitializeFlipper(UIApplication *application) {
 
   [Appboy startWithApiKey:@"26cb8e04-64ba-4b1c-93d2-0a2e9809f17f"
       inApplication:application
-  withLaunchOptions:launchOptions];
+  withLaunchOptions:launchOptions
+  withAppboyOptions:@{ ABKMinimumTriggerTimeIntervalKey : @(0) }];
   
   [AirBridge setLogLevel:AB_LOG_ALL];
   [AirbridgeRN getInstance:@"a2bc738fd1cb4226bdf9a622d1c9dff6" appName:@"abshop" withLaunchOptions:launchOptions];

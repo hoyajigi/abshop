@@ -4,4 +4,5 @@
     <string translatable="false" name="com_appboy_custom_endpoint">sdk.iad-03.braze.com</string>
     <bool translatable="false" name="com_appboy_firebase_cloud_messaging_registration_enabled">true</bool>
     <string translatable="false" name="com_appboy_firebase_cloud_messaging_sender_id">101009445817</string>
+    <integer name="com_appboy_trigger_action_minimum_time_interval_seconds">0</integer>
 </resources>
