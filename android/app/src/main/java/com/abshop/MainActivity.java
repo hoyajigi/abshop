@@ -1,7 +1,9 @@
 package com.abshop;
 
 import android.content.Intent;
+import android.os.Bundle;
 
+import com.appboy.Appboy;
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -18,5 +20,11 @@ public class MainActivity extends ReactActivity {
   public void onNewIntent(Intent intent) {
     super.onNewIntent(intent);
     setIntent(intent);
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    String deviceId = Appboy.getInstance(MainActivity.this).getInstallTrackingId();
   }
 }
